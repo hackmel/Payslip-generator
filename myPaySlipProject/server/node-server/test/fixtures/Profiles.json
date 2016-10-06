@@ -1,0 +1,44 @@
+[
+    {
+        "id":"1",
+        "name" : "test",
+        "location" : "dsadadsad",
+        "is_photographer" : false,
+        "is_customer" : false,
+        "avatar_content_type" : "image/jpg",
+        "avatar_file_size" : 1.87525e+07,
+        "avatar_file_path" : "uploads/avatar/731c7838-b7ba-413e-930f-11cf0c0bcee1.jpg",
+        "users" : [
+          {    "id" : "1",
+               "email" : "test2@yahoo.com",
+               "password" : "p",
+               "profile_id" : "1"
+           }
+        ]
+    },
+    
+    
+    {
+        "id": "2",
+        "name" : "Rommel A Suarez",
+        "location" : "Singapore",
+        "is_photographer" : false,
+        "is_customer" : false,
+        "avatar_content_type" : "image/jpg",
+        "avatar_file_size" : 80997,
+        "avatar_file_path" : "uploads/avatar/13023dba-ad06-432d-9a24-e724c0fe4763.jpg",
+        "created_at" : "2016-01-08T11:45:05.696Z",
+        "createdAt" : "2016-01-08T11:45:05.705Z",
+        "updatedAt" : "2016-01-08T11:45:05.720Z",
+         "users" : [
+          {
+            "id" : "2",  
+            "email" : "hackmel@yahoo.com",
+            "password" : "",
+            "profile_id" : "2"
+          }
+           
+        
+        ]
+    }
+]

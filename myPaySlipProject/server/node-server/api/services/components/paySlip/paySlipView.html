@@ -1,0 +1,17 @@
+
+      <div ng-controller = "PaySlipController as controller" >
+         <h2>Welcome {{controller.hello}} to the world of Tutorialspoint!</h2>
+
+
+
+        <form ng-submit="controller.calculatePaySlip()">
+            <input type="text" ng-model='controller.firstName'>
+            <input type="text" ng-model='controller.lastName'>
+            <input type="text" ng-model='controller.annualSalary'>
+            <input type="text" ng-model='controller.superRate'>
+            <input type="date" ng-model='controller.paymentStartDate'>
+
+            <button type="submit">Calculate PaySlip</button>
+        </form>
+
+      </div>

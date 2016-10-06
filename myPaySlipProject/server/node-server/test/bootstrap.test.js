@@ -1,0 +1,22 @@
+var Sails = require('sails')
+var Barrels = require('barrels');
+
+before(function(done) {
+
+Sails.lift({
+    // configuration for testing purposes
+    
+  
+  }, function(err, server) {
+    if (err) return done(err);
+    // here you can load fixtures, etc.
+    
+   
+    done(err, server);
+  });
+});
+
+after(function(done) {
+  // here you can clear fixtures, etc.
+  Sails.lower(done);
+});

@@ -1,0 +1,77 @@
+
+      <div class="container">
+
+        <h2>Payslip Generator</h2>
+        <div class="row">
+          <div class="panel panel-default">
+          <div class="panel-body">
+            <form  class="form-horizontal" role="form" ng-controller="PaySlipController as controller" name="controller.upload_form">
+
+                    <div class="form-group">
+                         <label for="inputName3" class="col-sm-3 control-label">Upload payslip file (.CSV):</label>
+                         <div class="col-sm-9">
+                           <input
+                              class="form-control"
+                              type="file"
+                              ngf-select
+                              ng-model="controller.file"
+                              name="file"
+                              ngf-pattern="'.csv'"
+                              accept=".csv"
+                              ngf-max-size="20MB"
+                              />
+                         </div>
+                    </div>
+
+                    <div class="form-group">
+                      <div class="col-sm-offset-2 col-sm-12">
+                          <button class="btn btn-success" type="submit" ng-click="controller.submit()">upload</button>
+                           <button class="btn btn-success" type="submit" ng-click="controller.downloadFile()">download</button>
+                      </div>
+                    </div>
+
+            </form>
+
+          </div>
+         </div>
+        </div>
+        <div class="row">
+          <div class="panel panel-default">
+          <div class="panel-body">
+            <h2>Instructions</h2>
+              <ul>
+                <li> Create an input csv file that contains the employee details with the following format. </li>
+                <li> First name, Last name, Annual salary, Super rate (%), Payment start date (dd-MM-YYYY) </li>
+                <li> One file can contain multiple employees. </li>
+                <li> By clicking the choose file button, browse and select the input csv file. </li>
+                <li> Click the upload button to upload the file. A succes message will appear once upload is complete. </li>
+                <li> Click download button to generate the payslip. A csv file will be downloaded into the local computer.</li>
+              </ul>
+          </div>
+        </div>
+
+        </div>
+
+        <div class="row">
+          <div class="panel panel-default">
+          <div class="panel-body">
+          <h2>Sample format</h2>
+            <p>Rommel,Suarez,60050,9%,11-08-2010 </p>
+            <p>Guen,Yu,120000,10%,10-08-2010</p>
+          </div>
+        </div>
+
+        </div>
+
+        <div class="row">
+          <div class="panel panel-default">
+          <div class="panel-body">
+          <h2>Output format</h2>
+          <p>"Name","Pay Period","Gross Income","Income Tax","Net Income","Super"</p>
+          <p>"Rommel Suarez","01 November- 30 November","5004","922","4082","450"</p>
+          <p>"Guen Yu","01 October- 31 October","10000","2696","7304","1000"</p>
+          </div>
+        </div>
+
+        </div>
+        </div>
