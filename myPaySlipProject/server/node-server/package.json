@@ -26,6 +26,7 @@
     "sails": "~0.12.6",
     "sails-disk": "~0.10.9",
     "skipper": "^0.6.4",
+    "skipper-disk": "^0.5.4",
     "ya-csv": "^0.9.4"
   },
   "scripts": {
